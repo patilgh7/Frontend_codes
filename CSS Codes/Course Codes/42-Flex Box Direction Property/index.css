@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#container {
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    background-color: lavender;
+    display: flex;
+    flex-direction: row-reverse;
+
+    /* flex-direction: column / column-reverse / row these are other directions   */
+}
+
+#heading {
+    text-align: center;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#box1 {
+    background-color:aqua;
+}
+
+#box2 {
+    background-color: blueviolet;
+}
+#box3 {
+    background-color: chartreuse;
+}
+#box4 {
+    background-color:tomato;
+}

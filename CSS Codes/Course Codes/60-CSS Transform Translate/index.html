@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Transform Translate</title>
+
+    <style>
+      .box {
+        height: 75px;
+        width: 75px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        margin: 10px;
+
+        transition: all 1s ease-in;
+      }
+
+      #box1 {
+        background-color: lime;
+      }
+
+      #box2 {
+        background-color: blueviolet;
+      }
+
+      #box3 {
+        background-color: indianred;
+      }
+
+      #box4 {
+        background-color: violet;
+      }
+
+
+      /* After Hover on box  */
+
+      #box1:hover {
+        transform: translate(50px);
+      }
+
+      #box2:hover {
+        transform: translate(50px, 50px);
+      }
+
+      #box3:hover {
+        transform: translateX(50px);
+      }
+
+      #box4:hover {
+        transform: translateY(50px);
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>CSS Transform Translate</h1>
+
+    <p>Please hover on the box</p>
+
+    <div id="box1" class="box">Translate 50px</div>
+
+    <div id="box2" class="box">Translate 50px, 50px</div>
+
+    <div id="box3" class="box">Translate X 50px</div>
+
+    <div id="box4" class="box">Translate Y 50px</div>
+
+  </body>
+</html>
+
+<!-- 
+
+Note :
+
+
+transform: translate(50px);
+
+transform: translateX(50px);
+translateX along x axis it will translate.
+
+transform: translateY(50px);
+translateY along y axis it will translate.
+
+-->

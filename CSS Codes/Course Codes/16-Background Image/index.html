@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Background Image</title>
+
+    <style>
+        #icon {
+            width: 800px;
+            height: 300px;
+            background-image: url(myntra.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            background-position: center;
+           
+        }
+    </style>
+
+</head>
+<body>
+    <div id="icon"></div>
+</body>
+</html>
+
+
+<!-- 
+Note :
+
+In background image property : myntra.png file size is 300 * 168 px
+And you are setting that image into height * width = 50 * 50 px so how can it will set.
+
+For that we use :
+background-size: contain; 
+But Still it is divided into two image because we have 50*50 heigth width and myntra.png is 300 * 168 px so 
+Thats why it is showing two images. 
+
+For Showing only one image we use :
+background-repeat: no-repeat; 
+
+
+
+ background-size: cover; This property cover whole div...this will stretch the image to div size if div size greater than img size
+
+ whereas  background-size: contain; gives whole image in that div
+
+ you can check what happens by cover property by uncommenting  background-size: cover;
+
+
+background-position: center; This property gives div center
+
+-->

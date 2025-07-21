@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Set 1</title>
+
+    <!-- With style tag 2nd Method -->
+    <style>
+
+       /* ID Selector  */
+       #div_22{
+        color: red;
+       }
+
+       /* Element Selector  */
+       p {
+        color: pink;
+       }
+
+       /* Class Selector  */
+       .special_heading{
+        color: aqua;
+       }
+       
+    </style>
+    
+
+</head>
+<body>
+    <h1 style="color: greenyellow;">ID Selector, Element Selector, Class Selector</h1>
+
+
+    <div id="div_22">Div</div>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, soluta?</p>
+
+    <h2 class="special_heading">heading 2</h2>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- 
+
+*****Important Note :
+
+
+Classes (multiple allowed, space-separated):
+
+<div class="box red big"></div>
+
+This element has 3 classes: box, red, and big
+
+
+
+And for class
+
+if you write like this it considers to classes 
+<h2 class="special heading">Heading 2</h2> 
+
+for this you can write 
+
+To style that element, you can use:
+
+✅ Correct:
+
+.special.heading {
+  color: aqua;
+}
+
+This selects any element that has both classes.
+
+
+❌ Incorrect:
+
+.special heading {
+  color: aqua;
+}
+
+
+
+===================================================
+
+
+❌ IDs (only one allowed, no spaces):
+
+<div id="box red">
+
+This is invalid — id cannot have spaces or multiple values
+
+✅ Correct ID usage:
+
+<div id="myBox"></div>
+
+And in CSS:
+
+#myBox {
+  color: blue;
+}
+
+
+
+
+ -->

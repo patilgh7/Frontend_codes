@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fetch API Print Response On HTML Page Using Promise Chain</title>
+
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Fetch API Print Response On HTML Page</h1>
+
+    <!-- This is used in getCatTags() to show text on page -->
+    <button id="btn">Get Cat Tags</button>
+
+    <!-- ✅ This will show the text below the button -->
+    <p id="tag_output"></p> 
+
+
+    <!-- This is used in getMeowFacts() to show text on page-->
+    <p id="meow_facts"></p>  
+    
+</body> 
+</html>
+
+<!-- 
+In your case
+You had:
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", getCatTags);
+And the script probably loaded before the button was rendered.
+
+So using defer like this:
+
+<script src="app.js" defer></script> 
+
+-->

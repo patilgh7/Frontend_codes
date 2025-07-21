@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Flex items flex-shrink</title>
+    
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <h1 id="heading">Flex Container</h1>
+
+    <div id="container">
+        
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+        <div id="box4" class="box">Box 4</div>
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+Note : 
+
+flex-shrink is a Flexbox property used on flex items (children of a flex container) to control how much they shrink when there’s not enough space in the flex container.
+
+
+Default value: 1
+
+Value 0: Don’t shrink at all
+
+Higher numbers = shrink more
+
+Lower numbers = shrink less
+
+When Does flex-shrink Work?
+Only when:
+
+display: flex is used on the parent/container
+
+IMPORTANT NOTE:  The total size of the child items is more than the container width/height
+
+
+
+Example Scenario
+Container width = 300px
+Each box width = 150px
+Total: 150px × 2 = 300px (fits perfectly) — no shrinking needed.
+
+Now change each box to 200px → Total: 400px → Now the container is too small, so shrinking happens.
+
+ -->

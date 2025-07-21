@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Property</title>
+
+    <style>
+      .pseudo {
+        height: 25px;
+        width: 150px;
+        background-color: forestgreen;
+        border: 2px solid black;
+        border-radius: 10px;
+
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: steps(3);
+        transition-delay: 0s;
+
+        /* transition: all 1s steps(3) 1s; */
+      }
+
+      .pseudo:hover {
+        height: 30px;
+        width: 160px;
+        background-color: lightcoral;
+      }
+
+      .pseudo:active {
+        height: 30px;
+        width: 160px;
+        background-color: red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <button class="pseudo">Learning Pseudo</button>
+  </body>
+</html>
+
+<!-- 
+
+Note :
+
+
+ .pseudo {
+        height: 25px;
+        width: 150px;
+        background-color: forestgreen;
+        border: 2px solid black;
+        border-radius: 10px;
+
+        transition-property: all;
+
+      }
+
+
+    ** transition-property: all; this means i want all above property change like height, width, background-color, border,      border-radius
+
+
+
+
+transition-property: all;
+Specifies that the transition should apply to all animatable properties (like color, width, etc.).
+
+transition-duration: 4ms;
+Defines the length of the transition — in this case, it lasts 4 milliseconds, which is extremely fast (almost unnoticeable).
+
+transition-timing-function: ease-in-out;
+Sets the speed curve of the transition — it starts slowly, speeds up in the middle, and slows down at the end.
+
+transition-delay: 1s;
+Adds a 1-second delay before the transition starts after the triggering event (like hover or focus).
+
+transition-timing-function: steps(3);
+This divides the transition into 3 equal "steps" with no smooth animation between them — the property will jump suddenly from one value to the next in 3 discrete intervals, rather than transitioning gradually.
+
+It’s useful for creating frame-by-frame or choppy/jumpy effects (like sprite animations).
+
+
+@@@ transition: all 1s ease-in-out 1s;  this is transition shorthand.
+
+
+-->

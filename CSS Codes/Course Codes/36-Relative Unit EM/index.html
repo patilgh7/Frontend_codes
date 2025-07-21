@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Relative Unit : EM</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #first {
+            height: 100px;
+            width: 200px;
+            font-size: 20px;
+            background-color: red;
+        }
+
+        #second {
+            height: 60%;
+            width: 50%;
+            font-size: 2em;
+            background-color: royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="first">
+        First div
+        <div id="second">Second div</div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+
+Note :
+
+In our case first div is parent relative to this second will adjust.i.e. 2em
+ 
+For first font-size = 20px and second font-size = 2em => 2 * 20px (2 * first font-size)
+
+em is a relative unit in CSS used for fonts, spacing, and sizing.
+
+The term em comes from the width of the letter “M” in typography.
+Originally, 1em was the width of the capital "M" in the current font size — but in CSS, it means:
+
+1em = current font size
+
+
+1em = 100% of the current element’s font size
+
+2em = 200% of the current font size
+
+0.5em = 50% of the current font size
+
+em is relative to the parent’s font size (when used for font-size)
+
+This can compound if you nest elements
+
+
+
+
+-->

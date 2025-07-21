@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+
+    <style>
+      .pseudo {
+        height: 25px;
+        width: 150px;
+        background-color: forestgreen;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+
+      .pseudo:hover {
+        height: 30px;
+        width: 160px;
+        background-color: red;
+      }
+
+      .pseudo:active {
+        height: 30px;
+        width: 160px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="pseudo">Learning Pseudo</button>
+  </body>
+</html>
+
+<!-- 
+
+Note :
+
+
+In this topic we are learning states like active, hover.
+
+Used to define special states of HTML elements.
+
+when you it will show purple color this is active state.
+
+and when you mouse hover on button it will show red color button.
+
+syntax : 
+
+    selector:pseudo-class {
+        styles
+    }
+
+example : 
+
+    .pseudo:active {
+        height: 30px;
+        width: 160px;
+        background-color: purple;
+    }
+
+-->

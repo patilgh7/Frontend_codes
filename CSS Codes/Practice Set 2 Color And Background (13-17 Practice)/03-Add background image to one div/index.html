@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Add background image to one div</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #bar {
+            background-color: aqua;
+            color: rgb(151, 29, 29, 0.8);
+        }
+
+        main{
+            height: 500px;
+            background-color: blanchedalmond;
+        }
+
+        #product {
+            background-image: url(jeans.webp);
+            height: 400px;
+            width: 280px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="bar">This is my nav bar</div>
+    </header>
+
+    <main>
+        <div id="product">Product 1</div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

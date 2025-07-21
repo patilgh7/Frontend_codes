@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Heading at the centre and make it capitalize</title>
+
+    <style>
+
+        /* common margin and padding  */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 1st way  */
+        #heading{
+            background-color: aqua;
+            text-align: center;
+            text-transform: capitalize;
+        }   
+
+        /* 2nd way for nested div*/
+
+        #nav h1 {
+            background-color: blueviolet;
+            text-align: center;
+            text-transform: capitalize;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 1st way  -->
+    <h1 id="heading">this is a heading</h1>
+
+    <!-- 2nd way Using div-->
+
+    <div id="nav">
+        <h1>navigation home</h1>
+    </div>
+    
+</body>
+</html>

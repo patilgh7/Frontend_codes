@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Display Property block, inline, inline-block</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    
+</body>
+</html>
+
+<!-- 
+
+Note : 
+
+1. display: inline;
+Behavior:
+The element does not start on a new line and only takes up as much width as necessary.
+
+Height/Width:
+You cannot set width and height—they are ignored.
+
+Example elements:
+<span>, <a>, <strong>
+
+Use case:
+Useful for styling small parts of text (e.g., highlight a word).
+
+
+2. display: block;  This is by default property
+Behavior:
+The element starts on a new line and stretches the full width of its parent container.
+
+Height/Width:
+You can set width and height.
+
+Example elements:
+<div>, <p>, <h1> to <h6>
+
+Use case:
+Used for large layout containers or sections.
+
+
+3. display: inline-block;
+Behavior:
+The element behaves like inline (i.e., stays inline with other elements) but you can set width and height.
+
+Combines:
+Best of both inline and block.
+
+Use case:
+Useful for buttons, badges, or cards that sit next to each other but still need box styling. 
+
+-->

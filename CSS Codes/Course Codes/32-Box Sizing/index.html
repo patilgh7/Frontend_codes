@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Box Sizing</title>
+
+    <style>
+      /* common properties for creating box write in pad class selector */
+
+      /* and different properties set in respective selector in our case first id selector and second first id selector */
+
+      /* universal selector using set margin and padding 0 to use whole page*/
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .pad {
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+        padding: 2px;
+        box-sizing: border-box;
+      
+      }
+
+      #first {
+        border: 2px solid black;
+        background-color: aqua;
+      }
+
+      #second {
+        border: 5px dotted red;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first" class="pad">First</div>
+
+    <div id="second" class="pad">Second</div>
+  </body>
+</html>
+
+
+
+<!-- 
+
+Note : 
+
+box-sizing: content-box (Default)
+The width and height only include the content.
+
+Padding and border are added outside the content area.
+
+So the final size = content + padding + border
+
+=================================================
+
+box-sizing: border-box (Better for layouts)
+The width and height include content, padding, and border.
+
+So the final size is exactly what you set.
+
+Padding and border shrink the content area to fit inside.
+
+ -->

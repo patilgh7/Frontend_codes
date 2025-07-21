@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Media Queries max-width</title>
+
+    <style>
+      .box {
+        padding: 5px;
+        height: 100px;
+        width: 100px;
+        background-color: mediumspringgreen;
+        border: 2px solid black;
+      }
+
+
+  
+      @media screen and (max-width: 300px) {
+        .box {
+          background-color: brown;
+        }
+      }
+    
+    </style>
+</head>
+<body>
+     <div class="box">Box</div>
+</body>
+</html>
+
+
+
+<!-- Note : 
+
+
+max-width: 300px  when we set this upto 300 px or exact 300 px it shows brown color. when it is greater than 300 px it color changes to green.
+
+max-width: 300px  is true upto 300px that means it shows first brown color. 
+
+Use **max-width** when you want to apply styles up to a certain screen size (usually mobile styling).
+
+-->

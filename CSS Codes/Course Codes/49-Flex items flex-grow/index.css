@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    text-align: center;
+}
+
+#container {
+    height: 300px;
+    width: 600px;
+    background-color: lavender;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+
+    justify-content: center;
+
+
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#box1 {background-color: aqua;}
+#box2 {
+    background-color: yellow;
+    flex-grow: 4;
+}
+#box3 {background-color: red;}
+#box4 {background-color: blueviolet;}

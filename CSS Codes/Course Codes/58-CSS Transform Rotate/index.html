@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Transform Rotate</title>
+
+    <style>
+      .box {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        margin: 10px;
+
+        transition: all 1s ease-in;
+      }
+
+      #box1 {
+        background-color: lime;
+      }
+
+      #box2 {
+        background-color: blueviolet;
+      }
+
+      #box3 {
+        background-color: indianred;
+      }
+
+      #box4 {
+        background-color: violet;
+      }
+
+
+      /* After Hover on box  */
+
+      #box1:hover {
+        transform: rotate(45deg);
+      }
+
+      #box2:hover {
+        transform: rotate(180deg);
+      }
+
+      #box3:hover {
+        transform: rotatex(45deg);
+      }
+
+      #box4:hover {
+        transform: rotatey(45deg);
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>CSS Transform Rotate</h1>
+
+    <p>Please hover on the box</p>
+
+    <div id="box1" class="box">45 Deg</div>
+
+    <div id="box2" class="box">180 Deg</div>
+
+    <div id="box3" class="box">X 45 Deg</div>
+
+    <div id="box4" class="box">Y 45 Deg</div>
+
+  </body>
+</html>
+
+<!-- 
+
+Note :
+
+
+transform: rotate(45deg);  and rotatez is same.
+
+transform: rotatex(45deg);
+rotatex along x axis it will rotate.
+
+transform: rotatey(45deg);
+rotatey along y axis it will rotate.
+
+-->

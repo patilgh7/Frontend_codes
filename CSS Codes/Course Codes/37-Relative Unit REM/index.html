@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Relative Unit : REM</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;  /* This is root element font size (Body Text font size) */ 
+        }
+
+        #first {
+            height: 100px;
+            width: 200px;
+            font-size: 12px;
+            background-color: red;
+        }
+
+        #second {
+            height: 60%;
+            width: 50%;
+            font-size: 2rem;
+            background-color: royalblue;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    Body Text
+    <div id="first">
+        First div
+        <div id="second">Second div</div>
+    </div>
+
+    <hr>
+
+    <h1>This is heading</h1>
+    
+</body>
+</html>
+
+
+<!-- 
+
+Note :
+
+In our case  Body Text is inside body tag so this is html element and h1 tag inside body also html element. So when 
+
+I increase the size in *{font-size: 10px} according to this size is applicable for Body Text size and same size for h1 tag because they 
+
+are html elements.  And in second id selector we mention  font-size: 2rem; so this will increase by (2 * html element font-size)
+
+i.e. 2 * 20px = 40px
+
+rem stands for “root em” — a relative unit in CSS used to size fonts, spacing, and layout elements.
+
+1rem = font-size of the <html> element
+
+t is not affected by the parent elements.
+
+Only depends on the <html> font-size (usually 16px by default).
+
+==========================================================================
+Base HTML font-size:
+
+html {
+  font-size: 16px;
+}
+
+==========================================================================
+
+h1 {
+  font-size: 2rem;   /* 2 * 16px = 32px */
+}
+
+p {
+  margin: 1rem;       /* 1 * 16px = 16px margin on all sides */
+}
+
+.button {
+  padding: 0.5rem 1rem; /* Top/Bottom: 8px, Left/Right: 16px */
+}
+
+
+==========================================================================
+
+
+-->

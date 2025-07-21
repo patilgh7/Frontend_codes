@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Transform Scale</title>
+
+    <style>
+      .box {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        margin: 10px;
+
+        transition: all 1s ease-in;
+      }
+
+      #box1 {
+        background-color: lime;
+      }
+
+      #box2 {
+        background-color: blueviolet;
+      }
+
+      #box3 {
+        background-color: indianred;
+      }
+
+      #box4 {
+        background-color: violet;
+      }
+
+
+      /* After Hover on box  */
+
+      #box1:hover {
+        transform: scale(2);
+      }
+
+      #box2:hover {
+        transform: scale(4);
+      }
+
+      #box3:hover {
+        transform: scalex(2);
+      }
+
+      #box4:hover {
+        transform: scaleY(2);
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>CSS Transform Scale</h1>
+
+    <p>Please hover on the box</p>
+
+    <div id="box1" class="box">Scale Twice</div>
+
+    <div id="box2" class="box">Scale 4 Times</div>
+
+    <div id="box3" class="box">Scale X Twice</div>
+
+    <div id="box4" class="box">Scale Y Twice</div>
+
+  </body>
+</html>
+
+<!-- 
+
+Note :
+
+
+transform: scale(2);
+
+transform: scalex(2);
+scalex along x axis it will scale.
+
+transform: scaleY(2);
+scaleY along y axis it will scale.
+
+-->

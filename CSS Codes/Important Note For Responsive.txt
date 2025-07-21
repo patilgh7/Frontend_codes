@@ -1,0 +1,94 @@
+
+Problem Statement :::   
+
+
+When I am trying media query code i face below problem 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+i have removed the line from code initially beacuse i dont know what it does the line and 
+
+i have used below code of media query without this <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   @media screen and (width: 300px){
+        .box {
+            background-color: brown;
+        }
+      }
+
+And I have tried with toggle device toolbar is off and stretching screen to 300px then its background perfectly changes to brown.
+
+But when I have tried with toggle device toolbar ON and setting width value to responsive as 300 then this problem occur. when i hit command in console 
+
+window.innerWidth  => it showing 980   
+
+but i want that command should show 300 then I got this problem And I got answer please check below.
+
+
+
+
+========>
+ 
+
+Answer : 
+
+
+
+if you remove this line from code it does not give responsive width properly.
+
+
+What This Meta Tag Does
+This line tells the browser:
+
+“Use the device’s actual screen width in CSS pixels, and don’t zoom in or scale the page.”
+
+
+
+🔍 Breakdown of the Tag:
+html
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Attribute			Meaning
+width=device-width	Set the page’s layout width equal to the device’s screen width (in CSS pixels)
+initial-scale=1.0	Do not zoom — start at 100% scale
+
+
+@@@
+
+❌ What Happens Without This Tag?
+If you don’t include this meta tag:
+
+On phones or simulated mobile viewports, the browser pretends the screen is ~980px wide
+
+It zooms out so the whole layout fits
+
+Your media queries like max-width: 300px won’t work, because the browser thinks the screen is much wider
+
+That’s why:
+
+Even when Chrome’s device toolbar said “300px”, your @media never activated
+
+Because without the meta tag, the browser still used a default layout width of ~980px
+
+✅ What Happens With the Meta Tag?
+As soon as you add:
+
+html
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Now:
+
+The browser says: “Okay, I’ll treat the layout as exactly the width of the device or screen”
+
+Your CSS media queries like @media (max-width: 300px) now trigger correctly
+
+The scaling matches real screen behavior
+
+📱 Real-Life Example
+Scenario	window.innerWidth	Media Queries Work?
+❌ Without Meta Tag	~980px	❌ No
+✅ With Meta Tag	Matches actual width (e.g., 300px)	✅ Yes
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Margin Property</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .pad {
+        height: 50px;
+        width: 50px;
+        padding: 2px;
+      }
+
+      #first {
+        margin: 5px 5px 25px 5px;
+
+        background-color: aquamarine;
+      }
+
+      #second {
+        margin: 50px 5px 5px 5px;
+
+        background-color: mediumorchid;
+      }
+
+      /* 
+      In First margin: 5px 5px 25px 5px; (Top, Right, Bottom = 25, Left)
+      In Second margin: 50px 5px 5px 5px; (Top = 50, Right, Bottom, Left)
+
+      It will take second Top margin between two box i.e. 50 
+      
+      */
+    </style>
+  </head>
+  <body>
+    <div id="first" class="pad">First</div>
+    <div id="second" class="pad">Second</div>
+  </body>
+</html>
+
+
+
+
+
+<!-- 
+
+Note :
+
+Margin is distance between two elements.
+Margin is distance between to boxes in our case right now.
+
+If two boxes are there and i want to decide margin between two boxes.
+
+If I put one box margin value greater than other box margin value it will take greater value for margin.
+
+Margin take greater value from its defined side like Top, Right, Bottom, Left.
+
+
+and
+For Padding => padding is used given values for Top, Right, Bottom, Left. 
+
+
+-->

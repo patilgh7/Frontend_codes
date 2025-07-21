@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Practice Demo for all Selectors</title>
+
+    <!-- When you use style tag in html i.e. css -->
+
+    <style>
+        #div_id {
+            color: aqua;
+        }
+
+        .div_class {
+            color: red;
+        }
+
+        #heading_id {
+            color: blueviolet;
+        }
+
+        .heading_class {
+            color: brown;
+        }
+
+        #paragraph_id {
+            color: yellowgreen;
+        }
+
+        .paragraph_class{
+            color: goldenrod;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- This is html code -->
+
+    <div id="div_id">Div with id attribute</div>
+
+    <div class="div_class">Div with class attribute</div>
+
+    <h1 id="heading_id">Heading with id attribute</h1>
+
+    <h1 class="heading_class">Heading with class attribute</h1>
+
+    <p id="paragraph_id">Paragraph with id attribute</p>
+
+    <p class="paragraph_class">Paragraph with class attribute</p>
+
+
+</body>
+</html>
+
+
+
+<!-- 
+
+Note :
+
+
+| You wrote this in HTML | → It's an attribute |
+| You access/change it in JS | → It's a property |
+
+
+CSS Selectors: #, ., and element selectors
+✅ 1. # → ID Selector
+Use # when selecting an element by its id.
+
+Each id must be unique in the HTML document.
+
+Example:
+css
+
+#pageTitle {
+  color: red;
+}
+
+html
+
+<h1 id="pageTitle">Heading</h1>
+✅ 2. . → Class Selector
+Use . when selecting one or more elements by class.
+
+You can reuse the same class on multiple elements.
+
+Example:
+css
+
+.main-heading {
+  font-size: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+html
+
+<h1 class="main-heading center">Welcome</h1>
+<p class="center">This is centered text.</p>
+✅ 3. Element Selector (No # or .)
+Just write the tag name to target all elements of that type.
+
+Example:
+css
+
+p {
+  color: blue;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+html
+
+<p>This is a paragraph.</p>
+<h1>Heading</h1>
+
+ -->

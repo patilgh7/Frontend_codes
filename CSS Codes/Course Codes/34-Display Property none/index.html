@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Display Property : none</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+
+            display: inline-block;
+        }
+
+        #box1 {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    
+</body>
+</html>
+
+<!-- 
+
+Note : 
+
+Important property :
+
+Lets take example for display: none;
+
+In react if you delete an element and you dont want occupy that delete logo in that case you can use display : none;
+
+
+#box1 {
+    visibility: hidden;
+}
+
+
+when you use visibility: hidden; property it occupies the space for box 1 beside box 2 but it is not showing in screen.
+
+but when you display: none;  it doesn't occupy the space beside box 2.
+-->

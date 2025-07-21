@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Media Queries min and max-width combination</title>
+
+    <style>
+      .box {
+        padding: 5px;
+        height: 100px;
+        width: 100px;
+        background-color: mediumspringgreen;
+        border: 2px solid black;
+        text-align: center;
+      }
+
+
+  
+      @media screen and (min-width: 250px) and (max-width: 300px) {
+        .box {
+          border-radius: 50%;
+        }
+      }
+    
+    </style>
+</head>
+<body>
+     <div class="box">Box</div>
+</body>
+</html>
+
+
+
+<!-- Note : 
+
+(min-width: 250px) and (max-width: 300px)
+
+Between 250px to 300px it shows circle. Otherwise square shape showing.
+
+-->

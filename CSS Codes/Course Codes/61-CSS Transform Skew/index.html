@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Transform Skew</title>
+
+    <style>
+      .box {
+        height: 75px;
+        width: 75px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        margin: 10px;
+
+        transition: all 1s ease-in;
+      }
+
+      #box1 {
+        background-color: lime;
+      }
+
+      #box2 {
+        background-color: blueviolet;
+      }
+
+  
+
+      /* After Hover on box  */
+
+      #box1:hover {
+        transform: skew(45deg);
+      }
+
+      #box2:hover {
+        transform: skew(90deg);
+      }
+
+  
+    </style>
+  </head>
+  <body>
+
+    <h1>CSS Transform Skew</h1>
+
+    <p>Please hover on the box</p>
+
+    <div id="box1" class="box">Skew 45 deg</div>
+
+    <div id="box2" class="box">Skew 90 deg</div>
+
+
+
+  </body>
+</html>
+
+<!-- 
+
+Note :
+
+
+transform: skew(45deg);
+
+skew 45 deg
+
+-->

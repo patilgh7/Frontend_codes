@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <title>Flex Box justify-content</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <h1 id="heading">Flex Container</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+        <div id="box4" class="box">Box4</div>
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+Note : 
+
+When you use flex prperty inside container all elements shrink or expand according to container size.
+
+In CSS, flex is short for Flexbox, a layout module designed to help you arrange elements in a row or column and distribute space evenly (or how you want) between them.
+
+It is especially useful for responsive design, aligning items easily both horizontally and vertically.
+
+| Property          | Axis It Works On                       | What It Aligns                                  |
+| ----------------- | -------------------------------------- | ----------------------------------------------- |
+| `justify-content` | **Main axis** (usually **horizontal**) | Controls **left-to-right** positioning of items |
+| `align-items`     | **Cross axis** (usually **vertical**)  | Controls **top-to-bottom** alignment of items   |
+
+
+Use Cases of Flex :
+
+Navbar menus
+
+Aligning buttons and icons
+
+Responsive cards
+
+Vertical centering
+
+Equal-height columns
+
+
+Example : 
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+-->

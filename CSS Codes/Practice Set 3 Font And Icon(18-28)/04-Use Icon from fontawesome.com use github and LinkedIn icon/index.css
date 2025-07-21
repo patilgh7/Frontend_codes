@@ -1,0 +1,32 @@
+
+.icon-container {
+    text-align: center;
+   
+}
+
+/* 
+
+ .fa-github {
+    font-size: 100px;
+    color: #e1a432;
+    
+}
+
+.fa-linkedin {
+    font-size: 100px;
+    color: rgb(27, 27, 136);
+} 
+ */
+
+.github-icon {
+    font-size: 100px;
+    color: #e1a432;
+    margin: 0px;
+    
+}
+
+.linkedin-icon{
+    font-size: 50px;
+    color: rgb(27, 27, 136);
+    margin: 120px;
+} 
